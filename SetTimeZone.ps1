@@ -1,12 +1,12 @@
 Configuration SetTimeZone
 {
-    Param
-    (
-	[String]$MachineName,
-       	[Parameter(Mandatory = $true)]
-       	[ValidateNotNullorEmpty()]
-       	[String]$SystemTimeZone="W. Europe Standard Time"   
-    )
+	Param
+	(
+		[String]$MachineName,
+		[Parameter(Mandatory = $true)]
+		[ValidateNotNullorEmpty()]
+		[String]$SystemTimeZone="W. Europe Standard Time"   
+	)
 	
 	Node $MachineName
 	{
